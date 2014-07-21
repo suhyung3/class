@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>RENDER_TEMPLATE</title>
+    <script>
+    if('{{query}}'!='None') document.location = 'https://www.google.co.kr/#q={{query}}';
+    </script>
+</head>
+<body>
+    <div>
+        <span> May I help you?</span>
+    </div>
+    <div>
+        <form action="index" method="get">
+            <input type="text" name="text_get">
+                <a href='https://www.google.co.kr/#q={{query}}'> Search google {{query}}</a>
+            <input type="submit" value="google">
+
+        </form>
+
+    </div>
+<!--     <div>
+        age : {{age}}
+    </div>
+    <div>
+        gender : {{gender}}
+    </div>
+    <div>
+        friends :
+            {% for one in friend %}
+                <ul>
+                    {{ one }}
+                </ul>
+            {% endfor %}
+    </div>
+    <div>    </div>
+    <div>Write down your name :)</div>
+    <div>
+        <form action="index" method="get">
+            <input type="text" name="text_get">
+            <input type="submit" value="Submit">
+        </form>
+        {{ input_get }}
+        <div></div>
+    </div>
+    <div>How old are you?</div>
+    <div>
+        <form action="index" method="post">
+            <input type="text" name="text_post">
+            <input type="submit" value="Submit">
+        </form>
+
+        {{ input_post }}
+    </div> -->
+</body>
+</html>
+
+
